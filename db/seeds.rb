@@ -34,4 +34,8 @@ end
 
 build_test_tree Page, 3
 
+build_test_tree ArticleCategory, 3
+
+
+
 

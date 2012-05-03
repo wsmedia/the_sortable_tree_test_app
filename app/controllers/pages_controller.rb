@@ -8,5 +8,4 @@ class PagesController < ApplicationController
   def manage
     @pages = Page.nested_set.all
   end
-
 end
