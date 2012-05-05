@@ -1,6 +1,3 @@
-- content_for :css do
-  = stylesheet_link_tag 'the_sortable_tree_min', :media => :screen
-
 %p= link_to raw('&larr; back'), '/'
 
-= sortable_tree @comments, :new_url => new_comment_path, :path => 'the_sortable_tree_min', :title => :name
+= sortable_tree @comments, :new_url => new_comment_path, :title => :name

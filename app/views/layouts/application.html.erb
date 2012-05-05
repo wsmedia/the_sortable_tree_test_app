@@ -5,8 +5,11 @@
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-  <%= yield :css %>
-  <%= yield :js %>
+
+  <%= javascript_include_tag 'jquery.ui.nestedSortable' %>
+  <%= stylesheet_link_tag    'sortable', :media => :all %>
+  <%= stylesheet_link_tag    'tree', :media => :all %>
+  
 </head>
 <body>
 
