@@ -7,7 +7,14 @@
 %ul
   %li= link_to 'admin/pages/index', admin_pages_path
   %li= link_to 'admin/pages/manage (sortable tree)', manage_admin_pages_path
+  %li= link_to 'admin/pages/manage (Render a Part of tree)', first_root_manage_admin_pages_path
+  
 
 %ul
   %li= link_to 'article_categories/index (min)', article_categories_path
   %li= link_to 'article_categories/manage (sortable tree)', manage_article_categories_path
+
+%ul
+  %li= link_to 'comments/index (min)', comments_path
+  %li= link_to 'comments/manage (sortable tree)', manage_comments_path
+  %li= link_to 'comments/manage (Sortable Tree of Comments)', tree_comments_path

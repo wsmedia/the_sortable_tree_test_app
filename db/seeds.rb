@@ -36,6 +36,39 @@ build_test_tree Page, 3
 
 build_test_tree ArticleCategory, 3
 
+def build_test_comments count = 3
+  count.times do
+    var             = Comment.new
+    var.name        = rand.to_s
+    var.email       = rand.to_s
+    var.raw_content = rand.to_s
+    var.save
 
+    puts '.'
+    count.times do
+      var1             = Comment.new
+      var1.name        = rand.to_s
+      var1.email       = rand.to_s
+      var1.raw_content = rand.to_s
+      var1.save
 
+      var1.move_to_child_of var
+      puts '..'
 
+      count.times do
+        var2             = Comment.new
+        var2.name        = rand.to_s
+        var2.email       = rand.to_s
+        var2.raw_content = rand.to_s
+        var2.save
+
+        var2.move_to_child_of var1
+        puts '...'
+      end
+    end
+  end
+  puts 'Comments'
+  puts Comment.count 
+end
+
+build_test_comments

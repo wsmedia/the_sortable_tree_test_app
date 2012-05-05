@@ -15,11 +15,19 @@ TheSortableTreeTest::Application.routes.draw do
     end
   end
 
+  resources :comments do
+    collection do
+      get :tree
+      get :manage
+      post :rebuild
+    end
+  end
+
   namespace :admin do
     resources :pages do
       collection do
-        get :manage
-        get :first_root_manage
+        get  :manage
+        get  :first_root_manage
         post :rebuild
       end
     end
