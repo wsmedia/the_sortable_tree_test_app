@@ -9,7 +9,7 @@ class CommentsController < ApplicationController
     @comments = Comment.nested_set.all
   end
 
-  def tree
+  def comments
     @comments = Comment.nested_set.all
   end
 end

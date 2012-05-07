@@ -17,7 +17,7 @@ TheSortableTreeTest::Application.routes.draw do
 
   resources :comments do
     collection do
-      get :tree
+      get :comments
       get :manage
       post :rebuild
     end
