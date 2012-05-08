@@ -36,6 +36,8 @@ build_test_tree Page, 3
 
 build_test_tree ArticleCategory, 3
 
+build_test_tree Inventory::Category, 3
+
 def build_test_comments count = 3
   count.times do
     var             = Comment.new
