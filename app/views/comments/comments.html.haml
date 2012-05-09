@@ -1,2 +1,2 @@
 %p= link_to raw('&larr; back'), '/'
-= sortable_tree @comments, :title => :name, :type => :comments
+= sortable_tree @comments, :title => :name, :type => :comments, :contacts_field => :email, :max_levels => 2
