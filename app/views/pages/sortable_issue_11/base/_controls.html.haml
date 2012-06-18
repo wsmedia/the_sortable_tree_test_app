@@ -13,4 +13,12 @@
     :onclick  =>  "alert('#{t('.delete_nested_elements')}')",
     :class    =>  'button undeleted')
 -# OUTPUT
+
+.menu
+  .dropdown-menu
+    %div
+      %a{:href => "#"} Action 1
+    %div
+      %a{:href => "#"} Action 2
+
 = edit + delete
