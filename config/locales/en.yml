@@ -3,3 +3,26 @@
 
 en:
   hello: "Hello world"
+
+  pages:
+    sortable:
+        base:
+          new:
+            create: Add element
+          controls:
+            edit_this: Edit element
+            delete: Delete element
+            delete_confirm: Do you want to delete element?
+            cant_be_deleted: Cant be deleted. Has nested elements
+            delete_nested_elements: Delete all nested elements
+
+    sortable_issue_11:
+        base:
+          new:
+            create: Add element
+          controls:
+            edit_this: Edit element
+            delete: Delete element
+            delete_confirm: Do you want to delete element?
+            cant_be_deleted: Cant be deleted. Has nested elements
+            delete_nested_elements: Delete all nested elements
